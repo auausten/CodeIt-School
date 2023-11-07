@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeIt School</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="icon" type="image/png" href="../images/logoCodeIt.png"/>
+        <style>
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html"><img class="logo" src="../images/logoBannerCodeIt.png"/></a>
+        <div class="navigation">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="../HTML-Lessons/HTML.Gateway.html"><img width="100px" src="../images/htmlBadge.png"/><center><p>HTML</p></center></a></td>
+                        <td><a href="../CSS-Lessons/CSS.Gateway.html"><img width="100px" src="../images/cssBadge.png"/><center><p>CSS</p></center></a></td>
+                        <td><a href="../Other-Lessons/Other.Gateway.html"><img width="100px" src="../images/otherBadge.png"/><center><p>OTHER</p></center></a></td>
+                        <td><a href="../contactUs.html"><img width="100px" src="../images/contactUs.png"/><center><p>CONTACT US</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="overview">
+            <img src="../images/htmlTagsBanner.png" width="1000px">
+            <h1>HTML Tags</h1>
+            <p>HTML Tags are the most basic part of HTML coding. Every thing in your website is a tag. Tags consist of a opening e.g. &lt;p&gt;. Tags also have an ending which is just the opening with a slash e.g. &lt;/p&gt;. Then it has what is in the tag e.g. "Hello World".</p>
+        </div>
+        <div class="activity">
+            <h2>Activity 1</h2>
+            <p>Below there is a textbox where you can type code. This is the most basic introduction to any HTML document; the beginning of the scaffold. The head consists of multiple important pieces of information including the DOCTYPE, language and more. All websites should have a similar head which can be changed according to what's on the webpage. Below the closing head tag &#40;&lt;/head&gt;&#41; and in between the &lt;&gt; type 'body' and below that &#40;two lines below&#41; type '/body'. In between these and in the &lt;&gt; type 'p' and after the '...&gt;' type 'Hello World'. After you put it in type '/p' in the second set of brackets.</p>
+            <center>
+                <textarea name="code" rows="10" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;&gt;
+        &lt;&gt;&lt;&gt;
+    &lt;&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <p>Everything in the code that you have just typed are very important and have a specific role. The '&lt;!DOCTYPE html&gt;' defines a webpage stating that the document type that will be coded into the rest of the webpage will be in the language HTML &#40;as shown through the '...html&gt;'&#41;. The next tag '&lt;html&gt;' represents the roots of the HTML document; the container for all the other HTML elements. The 'head' tag contains machine-readable information &#40;aka metadata&#41; about the HTML document, such as its title and style sheets. The title is defined through the 'title' tag in between the 'head' tags. The 'body' tags shows what will actually be shown on a webpage. As you can see from the textbox above, for every time you use an 'opening' tag &#40;&lt;...&gt;&#41;, there will be a 'closing' tag later on in the document &#40;&lt;/...&gt;&#41;. This is tremendously important as an opening tag begins a section of page content, and a closing tag closes it.<a id="activity2help"> For example, to display a heading &#40;for example 'h1'&#41;, you would open the text with the opening tag &lt;h1&gt; and close it with the closing tag &lt;/h1&gt; &#40;closing tags always proceed the element with a /&#41;.</p></a>
+            <p>This should produce something that looks like this if it was in an HTML document:</p>
+            <img src="../images/activity1exampleimage.png" width="1000px">
+            <p>In order to check whether or not your webpage has been made correctly in accordance to W3C's standard, paste ALL of the code in the textbox into this website: <u><a href="https://validator.w3.org/#validate_by_input+with_options">W3C Markup Validation</a></u></p>
+            <h3><u>MAKE SURE YOU DO THIS WITH NO ERRORS BEFORE MOVING ON!!!</u></h3>
+            <h2>Common HTML Tags</h2>
+            <p>There are 145 Tags in HTML5, however there are only a few that you will use regularly. These include:</p>
+            <ul>
+                <li>&lt;!DOCTYPE&gt; - Defines the document type.</li>
+                <li>&lt;html&gt; - Defines the root of an HTML document.</li>
+                <li> &lt;p&gt; - Defines a piece of text/paragraph</li>
+                <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;... &lt;h6&gt; - Defines HTML Headings.</li>
+                <li>&lt;img&gt; - Defines an image</li>
+                <li>&lt;table&gt; - Defines a table</li>
+                <li>&lt;tr&gt; - Defines a row for a table</li>
+                <li>&lt;td&gt; - Defines a cell in a table</li>
+            </ul>
+        </div>
+        <div class="activity">
+            <h2>Activity 2</h2>
+            <p>Continuing on from the previous activity, we are going to learn how to add more tags to your webpage to display different material. Below in the textbox above the 'p' tag and below the 'body' tag, in the space provided type in an opening 'h1' tag. If you are struggling, refer to <a target="_self" href="#activity2help"><u>'Activity 1'. *this is a link*.</u></a> After doing this, Type in 'This is my first website' after the 'h1' tag. Following this, make a closing 'h1' tag. Again, if you are struggling, refer to <a target="_self" href="#activity2help"><u>'Activity 1'.</u></a> Below the 'h1' tag, make a subheading saying: 'This website is awesome', by using the 'h2' tag. Remember to close the 'h2' tag that you opened.</p>
+            <center>
+                <textarea name="code" rows="12" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        
+        &lt;p&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <p>Following these instructions to a tee should lead you to a webpage that looks like this:</p>
+            <img width="1000px" src="../images/lesson1Activity2.png"/>
+            <h2>What is XHTML 1.0 Strict Validation?</h2>
+            <p>As you have seen throughout this lesson, we have asked you to validate your webpages through the W3Schools website. XHTML 1.0 Strict Validation refers to the process of checking whether a webpage follows the XHTML 1.0 Strict specification. XHTML &#40;Extensible HyperText Markup Language&#41; is a markup language that combines the syntax of HTML with the stricter rules of XML &#40;Extensible Markup Language&#41;.</p>
+            <h2>CONGRATS YOU HAVE COMPLETED YOUR 1ST LESSON!</h2>
+            <a href="HTML.Images.Tables.html"><center><img width="200px" src="../images/nextLesson.png"/></center></a>
+        </div>
+        <div class="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td class="footerTable"><center><a href="HTML.Overview.html"><img width="100px" src="../images/htmlBadgeClear.png"/><p>HTML OVERVIEW</p></center></a></td>
+                        <td class="footerTable"><center><a href="HTML.Images.Tables.html"><img width="100px" src="../images/htmlBadgeClear.png"/><p>HTML IMAGES AND TABLES</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <p>©&#123;&#123;CodeIt&#125;&#125;School 2023</p>
+    </body>
+</html>

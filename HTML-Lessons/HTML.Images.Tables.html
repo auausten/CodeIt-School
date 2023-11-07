@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeIt School</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="icon" type="image/png" href="../images/logoCodeIt.png"/>
+        <style>
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html"><img class="logo" src="../images/logoBannerCodeIt.png"/></a>
+        <div class="navigation">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="../HTML-Lessons/HTML.Gateway.html"><img width="100px" src="../images/htmlBadge.png"/><center><p>HTML</p></center></a></td>
+                        <td><a href="../CSS-Lessons/CSS.Gateway.html"><img width="100px" src="../images/cssBadge.png"/><center><p>CSS</p></center></a></td>
+                        <td><a href="../Other-Lessons/Other.Gateway.html"><img width="100px" src="../images/otherBadge.png"/><center><p>OTHER</p></center></a></td>
+                        <td><a href="../contactUs.html"><img width="100px" src="../images/contactUs.png"/><center><p>CONTACT US</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="overview">
+            <img src="../images/imagesAndTablesBanner.png" width="1000px">
+            <h1>Images in HTML</h1>
+            <p>Images are a very important part of any webpage. They can make your webpage look and function much better and now we will be learning how to put them into your webpage. We will also be showing you how to resize them using HTML and CSS later on.</p>
+        </div>
+        <div class="activity">
+            <h2>Activity 1</h2>
+            <p>The first step in inserting an image is to know the right tag. The tag in this case is &lt;img&gt;. The correct code to place inside the tag, for this activity is &lt;img width="400px" src="emoji.png"/&gt; &#40;refer to <a target="_self" href="#emojiImage"><u> the final webpage image.</u></a>&#41;. The '&lt;img...' defines that the following code will represent an image. The 'width="400px"' determines how many pixels &#40;px&#41; the width of the image will be, in this case, 400 pixels &#40;represented as "400px"&#41; The '...src...' specifies the path to the image and the '...="emoji.png"/&gt;' tells the program what the file for the image is. As you can tell, unlike normal tags, the image tag does not need a closing tag. In order to tell the program that the image tag is closed, '/&gt;' is used in place of '&lt;/img&gt;'. It doesn't need a closing tag as it is an 'inline' and 'empty' element.</p>
+            <p>In order to complete this task, ensure you have downloaded the image from this link: <a href="https://www.pngmart.com/files/22/Emoji-Thumbs-Up-PNG-File.png" download><u>Download Image</u></a></p>
+            <p>Simply:</p>
+            <ol>
+                <li><p>Right click the link</p></li>
+                <li><p>Press 'Open link in new tab'</p></li>
+                <li><p>Go to the tab</p></li>
+                <li><p>Right click the image</p></li>
+                <li><p>Press 'Save Image As...'</p></li>
+                <li><p>Save the image onto your computer</p></li>
+            </ol>
+            <textarea name="code" rows="11" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;images&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+            <p>If done right it would look like this:</p> 
+            <a id="emojiImage"><img width="997px" src="../images/ITExampleImage2.png"/></a>
+            <p>Remember to check whether or not your webpage has been made correctly in accordance to W3C's standard, paste ALL of the code in the textbox into this website: <u><a href="https://validator.w3.org/#validate_by_input+with_options">W3C Markup Validation</a></u></p>
+            <h3><u>MAKE SURE YOU DO THIS WITH NO &#40;or minimal&#41; ERRORS BEFORE MOVING ON!!!</u></h3>
+        </div>
+        <div class="overview">
+            <h1>Tables in HTML</h1>
+            <p>Tables are an easy but useful element of making an HTML webpage. They can display information such as images and text and can be used in numerous situations as some can have borders but some do not have borders.</p>
+        </div>
+        <div class="activity">
+            <h2>Activity 2</h2>
+            <a id="tableActivity"><p>The first step in inserting a table is to know the right tags. The tags in this case are &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; and &lt;td&gt;. &lt;table&gt; defines and says that there will be a table. &lt;tr&gt; defines a row in the table and &lt;th&gt; and &lt;td&gt; defines a 'table heading' and 'table data' which are used in a table row. As shown in the textbox below, there are 2 rows and 3 sets of table data in each row. This creates a 3x2 table, with a border which is 'size 1', with the word 'hello' in each box, as shown in the <a target="_self" href="#helloTableImage"><u>image</u></a> below.</p></a>
+            <textarea name="code" rows="22" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;tables&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;table border="1"&gt;
+            &lt;tr&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+                &lt;td&gt;hello&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+            <a id="helloTableImage"><img width="997px" src="../images/ITExampleImage3.png"/></a>
+            <p>For this activity, we will be combining all of the lessons so far into one. Since we have led you through all the lessons so far, we will tell you the basis of what to do and you will have to figure it out. If you get stuck at any point, refer to <a target="_self" href="#tableActivity"><u>this paragraph.</u></a> For this activity, you will need to make a 3x2 table with a border in size '5'. In the first row, type 'Quandale' in the first box, 'Emoji' in the second and 'Walter' in the third using table headings. In the second row, insert image 1, 2 and 3 into their own boxes respectively, from left to right. Resize the images to have a 400 pixel width.</p>
+            <p>Remember, image file names are determined by what you save them as on your computer.</p>
+            <p>In order to complete this task, ensure you have downloaded the images from the following links:</p>
+            <ul>
+                <li><a href="https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F002%2F320%2F268%2Fa53.jpg" download><u>Download Image 1</u></a></li>
+                <li><a href="https://st4.depositphotos.com/1001911/20795/v/600/depositphotos_207959524-stock-illustration-emoticon-showing-thumbs-out-sticking.jpg" download><u>Download Image 2</u></a></li>
+                <li><a href="https://i.kym-cdn.com/entries/icons/original/000/041/670/walterwhiteminecraft.jpg" download><u>Download Image 3</u></a></li>
+            </ul>
+            <p>Simply:</p>
+            <ol>
+                <li><p>Right click the link</p></li>
+                <li><p>Press 'Open link in new tab'</p></li>
+                <li><p>Go to the tab</p></li>
+                <li><p>Right click the image</p></li>
+                <li><p>Press 'Save Image As...'</p></li>
+                <li><p>Save the image onto your computer</p></li>
+            </ol>
+            <textarea name="code" rows="22" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;tables&lt;/title&gt;
+        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;&gt;
+            &lt;&gt;
+                &lt;&gt;&lt;&gt;
+                &lt;&gt;&lt;&gt;
+                &lt;&gt;&lt;&gt;
+            &lt;&gt;
+            &lt;&gt;
+                &lt;&gt;&lt;&gt;&lt;&gt;
+                &lt;&gt;&lt;&gt;&lt;&gt;
+                &lt;&gt;&lt;&gt;&lt;&gt;
+            &lt;&gt;
+        &lt;&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </textarea>
+            <p>If you have created the webpage properly, the webpage should look like this:</p>
+            <img width="997px" src="../images/tableActivity/tableImageFinal.png"/>
+            <p>Remember to check whether or not your webpage has been made correctly in accordance to W3C's standard, paste ALL of the code in the textbox into this website: <u><a href="https://validator.w3.org/#validate_by_input+with_options">W3C Markup Validation</a></u></p>
+            <h3><u>MAKE SURE YOU DO THIS WITH NO &#40;or minimal&#41; ERRORS BEFORE MOVING ON!!!</u></h3>
+            <h2>CONGRATS YOU HAVE COMPLETED YOUR 2ND LESSON!</h2>
+            <a href="../CSS-Lessons/CSS.Overview.html"><center><img width="200px" src="../images/nextLesson.png"/></center></a>
+        </div>
+        <div class="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td class="footerTable"><center><a href="HTML.Overview.html"><img width="100px" src="../images/htmlBadgeClear.png"/><p>HTML OVERVIEW</p></center></a></td>
+                        <td class="footerTable"><center><a href="HTML.Tags.html"><img width="100px" src="../images/htmlBadgeClear.png"/><p>HTML TAGS</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <p>©&#123;&#123;CodeIt&#125;&#125;School 2023</p>
+    </body>
+</html>

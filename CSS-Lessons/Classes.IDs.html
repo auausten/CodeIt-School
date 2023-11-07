@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeIt School</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="icon" type="image/png" href="../images/logoCodeIt.png"/>
+        <style>
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html"><img class="logo" src="../images/logoBannerCodeIt.png"/></a>
+        <div class="navigation">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="../HTML-Lessons/HTML.Gateway.html"><img width="100px" src="../images/htmlBadge.png"/><center><p>HTML</p></center></a></td>
+                        <td><a href="../CSS-Lessons/CSS.Gateway.html"><img width="100px" src="../images/cssBadge.png"/><center><p>CSS</p></center></a></td>
+                        <td><a href="../Other-Lessons/Other.Gateway.html"><img width="100px" src="../images/otherBadge.png"/><center><p>OTHER</p></center></a></td>
+                        <td><a href="../contactUs.html"><img width="100px" src="../images/contactUs.png"/><center><p>CONTACT US</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="overview">
+            <img width="1000px" src="../images/classesAndIDsBanner.png"/>
+            <h1>Classes and IDs</h1>
+            <h2>Elements</h2>
+            <p>Elements, classes and IDs are all examples of selectors in CSS. Elements were covered in the last lesson; they cover all the HTML tags and are a useful and easy way to change elements in a mass array. It is usually used to change the fonts and colours of a certain type of text &#40;h1, h2, p, etc.&#41;. The example below demonstrates changing all h1's, h2's and p's to the colour, red, and the font, arial.</p>
+            <center>
+                <textarea name="code" rows="5" cols="122">
+h1, h2, p &#123;
+    color: red;
+    font-family: Arial;
+&#125;
+                </textarea>
+            </center>
+            <h2>Classes</h2>
+            <p>The most common and useful selector is the 'class' selector. The class selector lets users select HTML elements based on their class attribute and it is used with CSS to distinguish elements for their own styling. In order to link an element to a class, you need to put 'class="className"' after the element, still within the brackets. Then, in your CSS document, type '.className'. The dot before the class name lets the document know that you are referencing to a class and the class name lets the document know what class you are talking about. An example is shown below, with the HTML document on the left and the CSS document on the right.</p>
+            <center>
+                <span class="textareaLeft">
+                    <textarea name="code" rows="11" cols="70">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p class="normalText"&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </textarea>
+                </span>
+                <span class="textareaRight">
+                    <textarea name="code" rows="11" cols="46">
+.normalText &#123;
+    color: red;
+    font-family: Arial;
+&#125;
+                    </textarea>
+                </span>
+            </center>
+            <p>Classes can be used across multiple webpages, with different elements, multiple times, and this is what makes classes much better as compared to IDs.</p>
+            <h2>IDs</h2>
+            <p>Even though IDs do the same job as classes, it is clearly inferior as an ID can only be used once for one specific element, as compared to classes which can do multiple elements across multiple pages. In order to link an element to an ID, you need to put 'id="idName"' after the element, still within the brackets. Then, in your CSS document, type '&#35;idName'. The hashtag before the ID name lets the document know that you are referencing to an ID and the ID name lets the document know what ID you are talking about. An example is shown below, with the HTML document on the left and the CSS document on the right.</p>
+            <center>
+                <span class="textareaLeft">
+                    <textarea name="code" rows="11" cols="70">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="normalText"&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </textarea>
+                </span>
+                <span class="textareaRight">
+                    <textarea name="code" rows="11" cols="46">
+&#35;normalText &#123;
+    color: red;
+    font-family: Arial;
+&#125;
+                    </textarea>
+                </span>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div class="activity">
+            <h2>Activity 1</h2>
+            <p>In the textboxes below, the left being an HTML document and the right being a CSS document, add a class to the h1, h2, h3, h5 and h6 elements. Name the class 'normalHeading'. Then add an ID to the h4 element and name the ID: 'strangeHeading'. In the CSS document, make the elements within the class: 'normalHeading', change the font to Arial and the colour to blue. Make the element linked to the ID: 'strangeHeading', have the font: 'fantasy' and change the colour to cyan. Change the background colour of the body to &#35;556b2f.</p>
+            <center>
+                <span class="textareaLeft">
+                    <textarea name="code" rows="15" cols="70">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is my website&lt;/h1&gt;
+        &lt;h2&gt;This is my website&lt;/h2&gt;
+        &lt;h3&gt;This is my website&lt;/h3&gt;
+        &lt;h4&gt;This is my website&lt;/h4&gt;
+        &lt;h5&gt;This is my website&lt;/h5&gt;
+        &lt;h6&gt;This is my website&lt;/h6&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                    </textarea>
+                </span>
+                <span class="textareaRight">
+                    <textarea name="code" rows="15" cols="46">
+.normalHeading &#123;
+    
+    
+&#125;
+
+&#35;strangeHeading &#123;
+    
+    
+&#125;
+
+.normalText &#123;
+    
+&#125;
+                    </textarea>
+                </span>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img width="1000px" src="../images/classesIDsExample.png"/>
+            <a href="Divs.Spans.html"><center><img width="200px" src="../images/nextLesson.png"/></center></a>
+        </div>
+        <div class="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td class="footerTable"><center><a href="CSS.Overview.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>CSS OVERVIEW</p></center></a></td>
+                        <td class="footerTable"><center><a href="CSS.Styles.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>CSS STYLES</p></center></a></td>
+                        <td class="footerTable"><center><a href="Divs.Spans.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>DIVS AND SPANS</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <p>©&#123;&#123;CodeIt&#125;&#125;School 2023</p>
+    </body>
+</html>

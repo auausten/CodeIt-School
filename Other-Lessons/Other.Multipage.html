@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeIt School</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="icon" type="image/png" href="../images/logoCodeIt.png"/>
+        <style>
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html"><img class="logo" src="../images/logoBannerCodeIt.png"/></a>
+        <div class="navigation">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="../HTML-Lessons/HTML.Gateway.html"><img width="100px" src="../images/htmlBadge.png"/><center><p>HTML</p></center></a></td>
+                        <td><a href="../CSS-Lessons/CSS.Gateway.html"><img width="100px" src="../images/cssBadge.png"/><center><p>CSS</p></center></a></td>
+                        <td><a href="../Other-Lessons/Other.Gateway.html"><img width="100px" src="../images/otherBadge.png"/><center><p>OTHER</p></center></a></td>
+                        <td><a href="../contactUs.html"><img width="100px" src="../images/contactUs.png"/><center><p>CONTACT US</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="overview">
+            <h1>Multipage Websites</h1>
+            <p>Your website cannot be limited to just one page. All good websites have multiple pages and ways to navigate to those pages. The ways that you can link multiple pages can also be used to link external websites and other websites that you made.</p>
+        </div>
+        <div class="activity">
+            <h2>Activity 1</h2>
+            <p>For this activity, you are going to need to use <a href="https://code.visualstudio.com/"><u>Visual Studio Code</u></a>. Download the app and follow the video below to show how to make a folder for your website, but instead of making a javascript file, make an HTML file. Use the previous lessons to put anything that you want in this file.</p>
+            <center>
+                <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/fEp5nWvujhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </center>
+            <p>We will be using the file you just created and linking that to another webpage. Create another HTML webpage and input all the nessecary information and some text. The tag that we will be using is the &lt;a&gt; tag. We will be using the tag like this: &lt;a href="insertfilenamehere.html"&gt;. Place this and a &lt;/a&gt; around the text and the text will become linked. If the webpage you are linking to is in a folder include the folder's name and a slash before the file name &#40;eg. &lt;a href="secondaryWebpages/index2.html"&gt;Click here to go to index 2&lt;/a&gt;&#41. If the page you are linking from is in a folder add a ../ in the very front &#40;eg. &lt;a href="../secondaryWebpages/index2.html"&gt;Click here to go to index 2&lt;/a&gt;&#41 as the '../' tells the program that you are 'leaving' a folder. In the example just stated the '../' says that you are 'leaving' a folder. The 'secondaryWebpages/' tells the program that you are entering the folder titled 'secondaryWebpages'. And the 'index2.html' represents the file. This logic is also used for images, if the images are in folders &#40which they should be&#41. If done correctly then your two pages will be linked.</p>
+            <p>This is an example of linking a webpage in a folder to another in a seperate folder:</p>
+            <center>
+                <textarea name="code" rows="10" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;a href="../webpages/index.html"&gt;Click here to go to the webpage that says 'Hello World'&lt;/a&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <center>
+                <textarea name="code" rows="10" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <a href="Final.Task.html">
+                <h2><u>Click here for your final task</u></h2>
+                <img width="300px" src="../images/emojiAngry.jpeg"/>
+            </a>
+        </div>
+        <p>©&#123;&#123;CodeIt&#125;&#125;School 2023</p>
+    </body>
+</html>

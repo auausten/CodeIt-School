@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeIt School</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Hind&Vadodara=swap" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <link rel="icon" type="image/png" href="../images/logoCodeIt.png"/>
+        <style>
+            a:link {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+            a:visited {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html"><img class="logo" src="../images/logoBannerCodeIt.png"/></a>
+        <div class="navigation">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="../HTML-Lessons/HTML.Gateway.html"><img width="100px" src="../images/htmlBadge.png"/><center><p>HTML</p></center></a></td>
+                        <td><a href="../CSS-Lessons/CSS.Gateway.html"><img width="100px" src="../images/cssBadge.png"/><center><p>CSS</p></center></a></td>
+                        <td><a href="../Other-Lessons/Other.Gateway.html"><img width="100px" src="../images/otherBadge.png"/><center><p>OTHER</p></center></a></td>
+                        <td><a href="../contactUs.html"><img width="100px" src="../images/contactUs.png"/><center><p>CONTACT US</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="overview">
+            <img width="1000px" src="../images/cssStylesBanner.png"/>
+            <h1>CSS Styles</h1>
+            <h2>External CSS</h2>
+            <p>Styles tell your HTML document what to change about its appearance and there are three different ways to implement different styles in your HTML document. The first way is through external CSS. External CSS is made through a seperate document &#40;as the name implies&#41; in a 'stylesheet', which most people tend to name 'style.css'. People using external CSS have to link the CSS document to the HTML document. This is done by using the 'link' tag in the head of your HTML document, displayed as such: &lt;link rel="stylesheet" type="text/css" href="style.css"/&gt;. The 'rel' determines the relation between the tag and the 'href', and the 'type' determines what type of document the document will be typed in. The example below demonstrates changing the text in a 'p' tag to red.</p>
+            <center>
+                <textarea name="code" rows="4" cols="122">
+p &#123;
+    color: red;
+&#125;
+                </textarea>
+            </center>
+            <br>
+            <h2>Internal CSS</h2>
+            <p>Similar to external CSS, it is typed in the same fashion, however, the code this time is in the HTML document, rather than a CSS document. This is created through the HTML tag: 'style'. The style element is located in the head area of the document and the code within is typed as how it would be typed in an external CSS document. The example below demonstrates changing the text in a 'p' tag to red.</p>
+            <center>
+                <textarea name="code" rows="15" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+        &lt;style&gt;
+            p &#123;
+                color: red;
+            &#125;
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <br>
+            <h2>Inline CSS</h2>
+            <p>Inline CSS is &#40for the most part&#41 very differently made as compared to the other two ways of implementing style into an HTML document. Rather than using an external document or the style tag, it rather uses the style attribute, as shown in the example below.</p>
+            <center>
+                <textarea name="code" rows="10" cols="122">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Website&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p style="color:red;"&gt;Hello World&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                </textarea>
+            </center>
+            <br>
+            <h1>Cascading Order</h1>
+            <p>All the styles in a page have an order of priority; Number 1 being more important than Number 2 and Number 2 being more important than Number 3:</p>
+            <ol>
+                <li>Inline</li>
+                <li>Internal</li>
+                <li>External</li>
+                <li>Browser default</li>
+            </ol>
+            <p>So if an external style says that 'p' will be blue, an internal style says that 'p' will be yellow and an inline style says that 'p' will be red, then 'p' will be red, as inline takes priority and will override internal and external styles.</p>
+            <h2>Common CSS Styles</h2>
+            <ul>
+                <li>color - Changes the color of whatever it is applied to.</li>
+                <li>background-color - Changes the color of the background of whatver it is applied to.</li>
+                <li>font-family - Changes the font of whatever it is applied to</li>
+                <li>float - Affects where what it is applied to is on the page.</li>
+                <li>margin - Changes the distance between the edge of the padge and were your content is.</li>
+            </ul>
+            <a href="Classes.IDs.html"><center><img width="200px" src="../images/nextLesson.png"/></center></a>
+        </div>
+        <div class="footer">
+            <center>
+                <table>
+                    <tr>
+                        <td class="footerTable"><center><a href="CSS.Overview.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>CSS OVERVIEW</p></center></a></td>
+                        <td class="footerTable"><center><a href="Classes.IDs.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>CLASSES AND IDS</p></center></a></td>
+                        <td class="footerTable"><center><a href="Divs.Spans.html"><img width="100px" src="../images/cssBadgeClear.png"/><p>DIVS AND SPANS</p></center></a></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <p>©&#123;&#123;CodeIt&#125;&#125;School 2023</p>
+    </body>
+</html>
